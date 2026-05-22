@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FatoReal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            FatoReal
+        </div>
+
+        <nav>
+
+            <a href="#como-funciona">
+                Como Funciona
+            </a>
+
+            <a href="#beneficios">
+                Benefícios
+            </a>
+
+            <button
+                class="nav-btn"
+                onclick="document.getElementById('noticia').focus()"
+            >
+                Começar Agora
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="badge">
+
+                <i class="fa-solid fa-microchip"></i>
+
+                Tecnologia de Inteligência Artificial
+
+            </div>
+
+            <h1>
+                Recupere sua confiança <br>
+                digital com a FatoReal
+            </h1>
+
+            <p>
+                Verifique a credibilidade de notícias e informações em segundos.
+                Nunca mais compartilhe fake news sem querer.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="noticia"
+                    autocomplete="off"
+                    placeholder="Cole aqui o link ou notícia do WhatsApp para verificar..."
+                >
+
+                <button onclick="verificar()">
+                    Verificar Agora
+                </button>
+
+            </div>
+
+            <span class="free">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                100% gratuito e seguro
+
+            </span>
+
+            <div id="resultado"></div>
+
+        </section>
+
+        <!-- PROBLEMA -->
+        <section class="problem">
+
+            <div class="section-top">
+                O Problema
+            </div>
+
+            <h2>
+                Cansado de se sentir manipulado pelas notícias?
+            </h2>
+
+            <div class="problem-grid">
+
+                <article class="problem-card">
+
+                    <h3>
+                        Medo de passar vergonha
+                    </h3>
+
+                    <p>
+                        Você compartilha uma notícia importante no grupo da família
+                        e depois descobre que era um boato falso.
+                    </p>
+
+                </article>
+
+                <article class="problem-card">
+
+                    <h3>
+                        Insegurança constante
+                    </h3>
+
+                    <p>
+                        Com tanto conteúdo manipulado circulando na internet,
+                        fica difícil saber em qual canal confiar.
+                    </p>
+
+                </article>
+
+                <article class="problem-card">
+
+                    <h3>
+                        Sensação de manipulação
+                    </h3>
+
+                    <p>
+                        Você sente que estão tentando enganar você,
+                        mas não tem tempo para investigar tudo.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SOLUÇÃO -->
+        <section class="solution">
+
+            <div class="section-top">
+                Nossa Solução
+            </div>
+
+            <h2>
+                Análise de Credibilidade em Tempo Real
+            </h2>
+
+            <p class="solution-text">
+                Nossa Inteligência Artificial analisa múltiplos metadados e cruza
+                informações com fontes institucionais para fornecer um veredito visual.
+            </p>
+
+            <div class="solution-cards">
+
+                <div class="solution-card">
+
+                    <h3>
+                        Score de Confiança
+                    </h3>
+
+                    <div class="score-preview">
+
+                        87
+
+                        <span>/100</span>
+
+                    </div>
+
+                    <p>
+                        Alta Confiança
+                    </p>
+
+                </div>
+
+                <div class="solution-card">
+
+                    <h3>
+                        Selo de Veracidade
+                    </h3>
+
+                    <div class="verified">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Verificado pela FatoReal
+
+                    </div>
+
+                    <p>
+                        Informação confiável
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BENEFÍCIOS -->
+        <section
+            class="benefits"
+            id="beneficios"
+        >
+
+            <div class="section-top">
+                Benefícios
+            </div>
+
+            <h2>
+                Por que escolher a FatoReal?
+            </h2>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>
+                        Economia de Tempo
+                    </h3>
+
+                    <p>
+                        Descubra rapidamente se o conteúdo é verdadeiro.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <h3>
+                        Fácil de Usar
+                    </h3>
+
+                    <p>
+                        Interface simples e intuitiva pensada para celulares.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <i class="fa-solid fa-award"></i>
+
+                    <h3>
+                        Autoridade e Confiança
+                    </h3>
+
+                    <p>
+                        Tecnologia baseada em modelos avançados de IA.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section
+            class="how"
+            id="como-funciona"
+        >
+
+            <div class="section-top">
+                Como Funciona
+            </div>
+
+            <h2>
+                Simples, rápido e eficiente
+            </h2>
+
+            <p class="how-sub">
+                Apenas 3 passos para verificar qualquer notícia
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <span>1</span>
+
+                    <h3>
+                        Copiar Link ou Texto
+                    </h3>
+
+                    <p>
+                        Cole a mensagem ou link suspeito.
+                    </p>
+
+                </div>
+
+                <div class="step">
+
+                    <span>2</span>
+
+                    <h3>
+                        Analisar com IA
+                    </h3>
+
+                    <p>
+                        Nossa IA cruza dados com fontes confiáveis.
+                    </p>
+
+                </div>
+
+                <div class="step">
+
+                    <span>3</span>
+
+                    <h3>
+                        Receber Score
+                    </h3>
+
+                    <p>
+                        Veja instantaneamente o nível de confiança.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+
+            <h2>
+                Proteja-se da desinformação hoje mesmo
+            </h2>
+
+            <p>
+                Junte-se a milhares de brasileiros que já verificam suas notícias
+                com a FatoReal.
+            </p>
+
+            <button onclick="document.getElementById('noticia').focus()">
+
+                Começar Verificação Gratuita
+
+            </button>
+
+            <span>
+                Nenhum cadastro necessário • 100% gratuito • Resultados instantâneos
+            </span>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            FatoReal
+        </div>
+
+        <p>
+            Combatendo a desinformação de forma leve, acessível e inteligente.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#como-funciona">
+                Como Funciona
+            </a>
+
+            <a href="#beneficios">
+                Benefícios
+            </a>
+
+            <a href="#">
+                Privacidade
+            </a>
+
+        </div>
+
+        <small>
+            © 2026 FatoReal. Todos os direitos reservados.
+        </small>
+
+    </footer>
+
+    <!-- MODAL -->
+    <div
+        class="modal-overlay"
+        id="popupResultado"
+    >
+
+        <div class="modal">
+
+            <div class="icon-box">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <h2>
+                Análise Concluída!
+            </h2>
+
+            <p class="modal-subtitle">
+                A Inteligência Artificial terminou a análise.
+            </p>
+
+            <div class="modal-score-circle">
+
+                <span class="modal-score-num">
+                    87
+                </span>
+
+                <span class="modal-score-text">
+                    SCORE IA
+                </span>
+
+            </div>
+
+            <p class="modal-status">
+
+                ✓ Conteúdo Verificado Seguro
+
+            </p>
+
+            <p class="modal-description">
+
+                Esta informação possui alta correspondência com fontes oficiais.
+
+            </p>
+
+            <button
+                class="modal-close-btn"
+                onclick="fecharModal()"
+            >
+
+                Fechar Resultado
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
